@@ -16,7 +16,7 @@ Available as webpage here: https://carolinacorona.github.io/RallyRadar/
 - **Match notes and photos:** write insights for later review and attach match photos.
 - **Win/loss record:** results come from the set scores you enter.
 - **Export:** PDF (team summary and/or one page per player with graphs) or Excel (one sheet per player plus team sheets and match notes).
-- **Backup and sharing:** export a team or a full backup as a file, optionally **encrypted with a password** (AES-256-GCM). Anyone with the file and the password can import it.
+- **Backup and sharing:** export a team or a full backup as a file, optionally **encrypted with a password**. Anyone with the file and the password can import it.
 - **Installable and offline:** a Progressive Web App (PWA) for phones, tablets and computers.
 
 ## Install
