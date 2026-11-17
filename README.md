@@ -19,6 +19,12 @@ Available as webpage here: https://carolinacorona.github.io/RallyRadar/
 - **Backup and sharing:** export a team or a full backup as a file, optionally **encrypted with a password** (AES-256-GCM). Anyone with the file and the password can import it.
 - **Installable and offline:** a Progressive Web App (PWA) for phones, tablets and computers.
 
+## Install
+- **Open the link in the description**. In the corner of your desktop or phone's browser tab, click install app.
+- Android (Chrome): menu (⋮) → Install app.
+- iPhone / iPad (Safari): Share button → Add to Home Screen.
+- Windows / Mac (Chrome or Edge): click the install icon at the right end of the address bar.
+
 ## How to use
 
 1. **Create or choose a team** with the selector at the top (⚙ Teams to add, rename or delete teams).
