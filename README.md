@@ -1,4 +1,5 @@
 # 🏐 Rally Radar
+<img width="1760" height="1120" alt="Logo@2x" src="https://github.com/user-attachments/assets/90d3383c-fe0f-427e-89d4-32f2bc111ed8" />
 
 **Spot the stats that win sets.**
 
