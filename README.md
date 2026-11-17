@@ -4,7 +4,7 @@
 **Spot the stats that win sets.**
 
 Rally Radar is a free volleyball stats tracker for coaches and teams. Record every serve, attack, reception and block live from your phone, then review the numbers per player, per match, per set or across a whole season. It runs in the browser, installs like a normal app on phones and computers, and works fully offline.
-
+Available as webpage here: https://carolinacorona.github.io/RallyRadar/
 ## Features
 
 - **Multiple teams:** manage as many teams, players and matches as you like. The app sets no limits; only your device storage does.
