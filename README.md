@@ -43,12 +43,12 @@ Rally Radar stores data **on each device** and has no server. To share results:
 2. Send the file through any channel you like (messaging, email, cloud drive).
 3. Others open the app, go to *Data*, type the same password and import the file.
 
-Importing a team that already exists on the device replaces it with the imported version, so agree on one person who records the matches. If you need live, automatic syncing between devices, the app would need an online backend (for example Supabase or Firebase), which is not included.
+🚨 Importing a team that already exists on the device replaces it with the imported version, so agree on one person who records the matches. 🚨
 
 ## Your data and privacy
 
 - Everything is stored locally in your browser (IndexedDB). Nothing is uploaded anywhere.
-- Clearing your browser data or uninstalling the app can erase it, so **back up regularly** with *Data → Back up all teams*.
+- 🚨 Clearing your browser data or uninstalling the app can erase it, so **back up regularly** with *Data → Back up all teams*. 🚨
 - The app asks the browser for persistent storage to reduce the chance of automatic cleanup.
 - Photos are resized before saving to keep storage small.
 
@@ -68,3 +68,4 @@ Vanilla JavaScript, IndexedDB and the Web Crypto API, [jsPDF](https://github.com
 ## Notes
 
 - Colours: navy `#1F2D4A` and terracotta `#C97B5F`.
+- Volley is life 😎
