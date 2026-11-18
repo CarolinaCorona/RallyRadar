@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Coaches: put the emails of the coach accounts you create in Firebase Authentication.
+    function isCoach() {
+      return request.auth != null
+        && request.auth.token.email in ['YOUR-EMAIL@example.com'];
+    }
+
+    // Team name document: it can be read only if you know the exact team code (no listing).
+    match /teams/{code} {
+      allow get: if true;
+      allow write: if isCoach();
+    }
+
+    // Players and matches of a team: readable with the team code, writable only by coaches.
+    match /teams/{code}/{col}/{id} {
+      allow read: if true;
+      allow write: if isCoach();
+    }
+  }
+}
