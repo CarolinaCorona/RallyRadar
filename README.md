@@ -10,13 +10,14 @@ Available as webpage here: https://carolinacorona.github.io/RallyRadar/
 - **Multiple teams:** manage as many teams, players and matches as you like. The app sets no limits; only your device storage does.
 - **Player profiles:** name, number, position and photo.
 - **Live match tracking:** one tap per action, with a minus button to correct mistakes. Set scores and a per-set lineup (who is on court) are supported.
-- **11 tracked stats per player:** points, good serves, bad serves, aces, kills, attempted kills (attacks that did not score), good reception, bad reception, blocks, digs (defence) and set assists.
-- **Automatic percentages:** serve %, reception % and kill % (kills ÷ kills + attempted kills).
+- **12 tracked stats per player:** points, good serves, missed serves, aces, kills, attempted kills, missed kills, good reception, bad reception, blocks, digs (Defence) and set assists.
+- **Animated intro:** a short radar logo animation plays when the app opens (tap to skip).
+- **Automatic percentages:** serve %, reception % and kill % (kills ÷ kills + attempted + missed kills).
 - **Statistics views:** total across matches, per match (all sets or a single set) and per player. Compare a player across matches or across sets, with bar charts and trend lines for any metric.
 - **Match notes and photos:** write insights for later review and attach match photos.
 - **Win/loss record:** results come from the set scores you enter.
 - **Export:** PDF (team summary and/or one page per player with graphs) or Excel (one sheet per player plus team sheets and match notes).
-- **Backup and sharing:** export a team or a full backup as a file, optionally **encrypted with a password**. Anyone with the file and the password can import it.
+- **Backup and sharing:** export a team or a full backup as a file, optionally **encrypted with a password** (AES-256-GCM). Anyone with the file and the password can import it.
 - **Installable and offline:** a Progressive Web App (PWA) for phones, tablets and computers.
 
 ## Install
@@ -45,6 +46,18 @@ Rally Radar stores data **on each device** and has no server. To share results:
 
 🚨 Importing a team that already exists on the device replaces it with the imported version, so agree on one person who records the matches. 🚨
 
+## Online sync
+
+Every device can have the same live data: you record as a coach, players open the app and see the updates. It uses Google Firebase on the free **Spark plan** (no credit card). It never bills you; if a daily limit is reached it just pauses until the next day. Photos are not synced (they stay on the device that added them); everything else is.
+
+**How it works**
+
+- Coaches sign in with an email and password you create. Only those accounts can change data.
+- Players need no account. They join with a team code or a link and get a view-only copy that updates live.
+- It works offline: each device keeps its own copy and catches up when the connection returns.
+- If two coaches edit the same match at the same moment, the last save wins, so agree on who records each match.
+- Anyone who has a team code can read that team, so share codes only with your team.
+
 ## Your data and privacy
 
 - Everything is stored locally in your browser (IndexedDB). Nothing is uploaded anywhere.
@@ -60,12 +73,14 @@ Rally Radar stores data **on each device** and has no server. To share results:
 | `manifest.json` | Install information: name, colours, icons |
 | `sw.js` | Service worker that enables offline use |
 | `icon-192.png`, `icon-512.png` | App icons |
+| `firebase-config.js` | Your Firebase settings for online sync |
+| `firestore.rules` | Security rules to paste into Firebase |
 
 ## Built with
 
-Vanilla JavaScript, IndexedDB and the Web Crypto API, [jsPDF](https://github.com/parallax/jsPDF) with jsPDF-AutoTable, [SheetJS](https://sheetjs.com/), and the Fraunces and Lato fonts from Google Fonts.
+Vanilla JavaScript, IndexedDB, the Web Crypto API, Firebase (Firestore and Authentication), [jsPDF](https://github.com/parallax/jsPDF) with jsPDF-AutoTable, [SheetJS](https://sheetjs.com/), and the Fraunces and Lato fonts from Google Fonts.
 
 ## Notes
 
-- Colours: navy `#1F2D4A` and terracotta `#C97B5F`.
+- Colors: navy `#1F2D4A` and terracotta `#C97B5F`.
 - Volley is life 😎
