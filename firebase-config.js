@@ -3,13 +3,20 @@
 // 2) Copy the values from "firebaseConfig" and replace the null below with them, like the example.
 // These values identify your project; they are not passwords.
 //
-// Example:
-// window.FB_CONFIG = {
-//   apiKey: "AIza...",
-//   authDomain: "your-project.firebaseapp.com",
-//   projectId: "your-project",
-//   storageBucket: "your-project.firebasestorage.app",
-//   messagingSenderId: "1234567890",
-//   appId: "1:1234567890:web:abcdef"
-// };
-window.FB_CONFIG = null;
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA4ImI5ZEgUPQtKTME9Yh5BcF9PA3QkuvE",
+  authDomain: "rally-radar-a1d11.firebaseapp.com",
+  projectId: "rally-radar-a1d11",
+  storageBucket: "rally-radar-a1d11.firebasestorage.app",
+  messagingSenderId: "1020989634736",
+  appId: "1:1020989634736:web:21e228333813888fade375"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
