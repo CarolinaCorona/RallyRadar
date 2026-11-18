@@ -3,13 +3,7 @@
 // 2) Copy the values from "firebaseConfig" and replace the null below with them, like the example.
 // These values identify your project; they are not passwords.
 //
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
+window.FB_CONFIG = {
   apiKey: "AIzaSyA4ImI5ZEgUPQtKTME9Yh5BcF9PA3QkuvE",
   authDomain: "rally-radar-a1d11.firebaseapp.com",
   projectId: "rally-radar-a1d11",
@@ -17,6 +11,3 @@ const firebaseConfig = {
   messagingSenderId: "1020989634736",
   appId: "1:1020989634736:web:21e228333813888fade375"
 };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
