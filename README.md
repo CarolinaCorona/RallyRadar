@@ -3,14 +3,15 @@
 
 **Spot the stats that win sets.**
 
-Rally Radar is a free volleyball stats tracker for coaches and teams. Record every serve, attack, reception and block live from your phone, then review the numbers per player, per match, per set or across a whole season. It runs in the browser, installs like a normal app on phones and computers, and works fully offline.
+Rally Radar is a free volleyball stats tracker for coaches and teams. Record every serve, attack, reception and block live from your phone, then review the numbers per player, per match, per set or across a whole season or years. It runs in the browser, installs like a normal app on phones and computers, and works fully offline.
 Available as webpage here: https://carolinacorona.github.io/RallyRadar/
+
 ## Features
 
 - **Multiple teams:** manage as many teams, players and matches as you like. The app sets no limits; only your device storage does.
 - **Player profiles:** name, number, position and photo.
 - **Live match tracking:** one tap per action, with a minus button to correct mistakes. Set scores and a per-set lineup (who is on court) are supported.
-- **12 tracked stats per player:** points, good serves, missed serves, aces, kills, attempted kills, missed kills, good reception, bad reception, blocks, digs (Defence) and set assists.
+- **13 tracked stats per player:** points, good serves, missed serves, aces, kills, attempted kills, missed kills, good reception, bad reception, blocks, good defence, bad defence, and set assists.
 - **Animated intro:** a short radar logo animation plays when the app opens (tap to skip).
 - **Automatic percentages:** serve %, reception % and kill % (kills ÷ kills + attempted + missed kills).
 - **Statistics views:** total across matches, per match (all sets or a single set) and per player. Compare a player across matches or across sets, with bar charts and trend lines for any metric.
@@ -48,7 +49,7 @@ Rally Radar stores data **on each device** and has no server. To share results:
 
 ## Online sync
 
-Every device can have the same live data: you record as a coach, players open the app and see the updates. It uses Google Firebase on the free **Spark plan** (no credit card). It never bills you; if a daily limit is reached it just pauses until the next day. Photos are not synced (they stay on the device that added them); everything else is.
+Every device can have the same live data: you record as a coach, players open the app and see the updates. Photos are not synced (they stay on the device that added them); everything else is.
 
 **How it works**
 
